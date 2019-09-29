@@ -11,6 +11,9 @@ const Header = () =>  {
             <Link to="/function_component" className="item">
                 FunctionComponent
             </Link>
+            <Link to="/class_component" className="item">
+                ClassComponent
+            </Link>
         </div>
     </div>
   );
