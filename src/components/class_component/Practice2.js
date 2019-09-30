@@ -1,18 +1,13 @@
 import React from 'react';
+import SeasonDisplay from './SeasonDisplay';
 
 class Practice2 extends React.Component {
-  constructor(props) {
-    super(props);
+  state = { lat: null, errorMessage: '' }
 
-    this.state = { lat: null, errorMessage: '' }
-
+  componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
-      position => {
-        this.setState({lat: position.coords.latitude});
-      },
-      err => {
-        this.setState({errorMessage: err.message});
-      }
+      position => this.setState({lat: position.coords.latitude}),
+      err => this.setState({errorMessage: err.message})
     );
   };
 
@@ -26,11 +21,7 @@ class Practice2 extends React.Component {
     }
 
     if (!this.state.errorMessage && this.state.lat) {
-      return (
-        <div className="ui container">
-          Laditude: {this.state.lat}
-        </div>
-      );
+      return <SeasonDisplay lat={this.state.lat}/>
     }
 
     return (
