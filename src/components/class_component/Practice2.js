@@ -1,5 +1,6 @@
 import React from 'react';
 import SeasonDisplay from './SeasonDisplay';
+import Spinner from './Spinner';
 
 class Practice2 extends React.Component {
   state = { lat: null, errorMessage: '' }
@@ -26,7 +27,7 @@ class Practice2 extends React.Component {
 
     return (
       <div className="ui container">
-        Loading
+        <Spinner message="Please accept location request!" />
       </div>
     );
   };
