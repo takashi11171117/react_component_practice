@@ -14,6 +14,9 @@ const Header = () =>  {
             <Link to="/class_component" className="item">
                 ClassComponent
             </Link>
+            <Link to="/form_and_ajax" className="item">
+                FormandAjax
+            </Link>
         </div>
     </div>
   );
