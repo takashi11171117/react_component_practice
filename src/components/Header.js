@@ -17,6 +17,9 @@ const Header = () =>  {
             <Link to="/form_and_ajax" className="item">
                 FormandAjax
             </Link>
+            <Link to="/react_redux" className="item">
+                ReactRedux
+            </Link>
         </div>
     </div>
   );
