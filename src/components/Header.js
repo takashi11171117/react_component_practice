@@ -20,6 +20,9 @@ const Header = () =>  {
             <Link to="/react_redux" className="item">
                 ReactRedux
             </Link>
+            <Link to="/async_redux" className="item">
+                AsyncRedux
+            </Link>
         </div>
     </div>
   );
