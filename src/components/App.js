@@ -5,6 +5,7 @@ import Practice2 from './class_component/Practice2'
 import Practice3 from './form_and_ajax/Practice3'
 import Practice4 from './react_redux/Practice4'
 import Practice5 from './async_redux/Practice5'
+import PostList from './apollo/PostList'
 import Header from './Header'
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/form_and_ajax" component={Practice3} />
           <Route path="/react_redux" component={Practice4} />
           <Route path="/async_redux" component={Practice5} />
+          <Route path="/apollo" component={PostList} />
         </div>
       </BrowserRouter>
     </div>
